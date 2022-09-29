@@ -1,0 +1,37 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "Sending Mail Using RabbitMq and NodeMailer",
+  "main": "app.js",
+  "author": "Orebayo Oluwapelumi",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js&&nodemon ./jobs/subscriber.js",
+    "publish": "nodemon ./jobs/publisher.js",
+    "consume": "nodemon ./jobs/subscriber.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oluwapelumi154/RabbitMq-.git"
+  },
+  "keywords": [
+    "publisher",
+    "consumer",
+    "subscriber",
+    "message broker"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.2",
+    "nodemailer": "^6.8.0",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "bugs": {
+    "url": "https://github.com/Oluwapelumi154/RabbitMq-/issues"
+  },
+  "homepage": "https://github.com/Oluwapelumi154/RabbitMq-#readme"
+}
